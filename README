@@ -1,0 +1,119 @@
+# Threat Modeling with the PASTA Framework
+
+## Descripción del proyecto
+
+Este proyecto documenta el proceso de modelado de amenazas de una aplicación móvil utilizando el framework **PASTA (Process for Attack Simulation and Threat Analysis)**.
+
+El escenario consiste en analizar una aplicación de compra y venta de zapatillas antes de su lanzamiento con el objetivo de identificar amenazas, vulnerabilidades y riesgos potenciales que puedan comprometer la seguridad de la información y el funcionamiento de la plataforma.
+
+El análisis sigue las siete etapas del framework PASTA para comprender el negocio, evaluar la arquitectura tecnológica, analizar el flujo de datos, identificar amenazas, detectar vulnerabilidades y proponer controles de seguridad que reduzcan el riesgo antes de que la aplicación entre en producción.
+
+---
+
+# Objetivos
+
+- Comprender el funcionamiento del framework PASTA.
+- Analizar una aplicación antes de su lanzamiento.
+- Identificar activos críticos.
+- Detectar amenazas internas y externas.
+- Analizar vulnerabilidades potenciales.
+- Modelar posibles ataques.
+- Proponer controles de seguridad para reducir riesgos.
+
+---
+
+# Tecnologías Analizadas
+
+- API (Application Programming Interface)
+- PKI (Public Key Infrastructure)
+- SHA-256
+- SQL Database
+
+---
+
+# Framework utilizado
+
+El proyecto aplica las siete etapas del framework PASTA:
+
+1. Definir objetivos del negocio
+2. Definir el alcance tecnológico
+3. Analizar el flujo de datos
+4. Identificar amenazas
+5. Analizar vulnerabilidades
+6. Modelar ataques
+7. Analizar riesgos y definir controles
+
+---
+
+# Principales Hallazgos
+
+- La base de datos SQL representa uno de los activos más críticos.
+- Las API requieren controles adecuados de autenticación y autorización.
+- La validación insuficiente de entradas puede facilitar ataques como SQL Injection.
+- El modelado de amenazas permite identificar riesgos antes del despliegue de la aplicación.
+- La implementación de controles preventivos reduce significativamente la superficie de ataque.
+
+---
+
+# Controles de Seguridad Recomendados
+
+- Firewall correctamente configurado.
+- Autenticación Multifactor (MFA).
+- Validación de entradas.
+- Prepared Statements para consultas SQL.
+- IDS/IPS.
+- Monitoreo continuo.
+- Cifrado de datos sensibles.
+- Gestión segura de credenciales.
+
+---
+
+# Estructura del Proyecto
+
+```text
+threat-modeling-pasta-framework/
+│
+├── README.md
+├── pasta-threat-model.md
+├── risk-analysis.md
+│
+└── assets/
+```
+
+---
+
+# Evidencias Visuales
+
+### 1. Panorama General
+
+![Panorama](assets/01-project-overview.png)
+
+---
+
+### 2. Flujo de Datos
+
+![Flujo](assets/02-data-flow.png)
+
+---
+
+### 3. Árbol de Ataque
+
+![Árbol](assets/03-attack-tree.png)
+
+---
+
+### 4. Framework PASTA
+
+![Framework](assets/04-pasta-framework.png)
+
+---
+
+### 5. Dashboard Ejecutivo
+
+![Dashboard](assets/05-executive-dashboard.png)
+
+---
+
+# Conclusión
+
+El framework PASTA proporciona una metodología estructurada para identificar amenazas, analizar vulnerabilidades y evaluar riesgos durante el desarrollo de una aplicación. Aplicarlo antes del despliegue permite fortalecer la seguridad desde el diseño, reducir la superficie de ataque y minimizar la probabilidad de incidentes futuros.
